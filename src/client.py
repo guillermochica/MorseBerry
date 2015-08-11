@@ -20,18 +20,17 @@ while True:
 				s.send('M/'+message)
 			elif received == 'RECEIVED':
 				print 'The message has been received'
-				decision = raw_input('Do you want to send another message (Yes or No): ')
-				
+				while True:
+					decision = raw_input('Do you want to send another message (Yes or No): ')
+					if decision != 'Yes' and decision != 'No':
+						print 'I do not understad that'
+					else:
+						break				
 				if decision == 'Yes':
 					print 'Sending petition...'
 					s.send('PETITION')
 				elif decision == 'No':
 					print 'ADIOS'
-					s.send('CLOSE')
-					s.close()
-					break
-				else:
-					print 'I do not understand that... Closing connection'
 					s.send('CLOSE')
 					s.close()
 					break
