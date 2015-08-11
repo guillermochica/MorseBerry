@@ -100,7 +100,7 @@ def morseToLight(string):
                         GPIO.output(green_led, True)
                         sleep(1)
                         GPIO.output(red_led, False)
-                        GPIO,output(green_led, False)
+                        GPIO.output(green_led, False)
                         sleep(1)
 
 def clean():
