@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import morse as MorseBerry
 import socket
 print 'hola'
