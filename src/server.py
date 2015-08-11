@@ -12,7 +12,7 @@ s.listen(10)
 print "Server running at " + host + ":" + str(port)
 while True:
 	c, address = s.accept()
-	print "Conexion started with ", address
+	print "Connection started with ", address
 	c.send('START')
 	message=c.recv(1024)
 	if message=='READY':
@@ -26,7 +26,7 @@ while True:
 			break
 		elif message == 'PETITION':
 			c.send("SEND")
-		elif message[0]=='M': #es un mensaje
+		elif message[0]=='M': #It's a message
 			MorseBerry.morseToLight(message[2:])
 			print message[2:]
 			c.send("RECEIVED")
