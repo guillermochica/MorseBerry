@@ -104,4 +104,4 @@ def morseToLight(string):
                         sleep(1)
 
 def clean():
-	GPIO.cleanup
+	GPIO.cleanup()
