@@ -102,9 +102,6 @@ def morseToLight(string):
                         GPIO.output(red_led, False)
                         GPIO,output(green_led, False)
                         sleep(1)
-        GPIO.cleanup()
-string = raw_input('Introduce una frase: ')
 
-morseToLight(string)
-
-
+def clean():
+	GPIO.cleanup
