@@ -32,7 +32,7 @@ try:
 			    print message[2:]
 			    c.send("RECEIVED")
 	    print 'Connection closed with ', address
-except KeyboardInterrup:
+except KeyboardInterrupt:
     print '\nGoodbye...'
 except:
     print 'Some error occurred'
