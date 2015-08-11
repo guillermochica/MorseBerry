@@ -3,7 +3,7 @@ import socket
 
 #Create the socket
 s = socket.socket()
-destination_address = '192.168.1.7'
+destination_address = '192.168.1.7' ###Put here the address of your raspberry
 destination_port = 4444
 print "Connecting with ", destination_address
 s.connect((destination_address,destination_port))

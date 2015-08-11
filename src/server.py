@@ -4,7 +4,7 @@ import socket
 print 'hola'
 #Create the socket
 s = socket.socket()
-host = '127.0.0.1'
+host = '127.0.0.1' ###Put here the address of your Raspberry
 port = 4444
 s.bind((host,port))
 
